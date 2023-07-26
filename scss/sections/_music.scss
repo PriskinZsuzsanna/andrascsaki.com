@@ -1,5 +1,5 @@
 .music {
-    background-color: $light;
+    background-color: var(--light);
 
     img {
         border-radius: .6rem;
@@ -18,7 +18,7 @@
     }
 
     i {
-        color: $dark;
+        color: var(--dark);
     }
 }
 
@@ -54,12 +54,12 @@
 }
 
 .tab-music-links.active-link {
-    background-color: $dark;
-    color: $white;
+    background-color: var(--dark);
+    color: var(--white);
 }
 
 .tab-music-links:not(.active-link) {
-    border: 1px solid $dark;
+    border: 1px solid var(--dark);
 }
 
 .tab-music-contents:not(.active-tab) {
@@ -84,7 +84,7 @@
 
     &::after {
         @include pseudo;
-        background-color: #908f8f7c;
+        background-color: var(--filter);
         border-radius: .5rem;
         z-index: 1;
     }
@@ -93,11 +93,11 @@
     .cd-item {
         width: min(100%, 266px);
         padding: .5rem;
-        background: #ffffff46;
+        background: var(--frosted); 
         margin: 1rem;
         border-radius: .5rem;
-        box-shadow: 1px 1px 4px #ffffff46;
-        backdrop-filter: blur(8px);
+        box-shadow: 1px 1px 4px var(--frosted);
+        backdrop-filter: blur(3px);
         scale:1;
         z-index: 2;
         transition: scale .3s ease-in-out, background .3s ease-in-out;
@@ -108,8 +108,7 @@
 
         &:hover {
             scale: 1.03;
-            background-color: #e8e5e5b3;
-            color: #000;
+            background-color: var(--frosted-hover);
             cursor:pointer;
         }
       

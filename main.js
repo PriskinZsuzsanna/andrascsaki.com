@@ -65,7 +65,26 @@ tabMusicLinks.forEach((tab) => {
   tab.addEventListener("click", handleButtonClickMusicSections);
 }); 
 
+//scroll
+const header = document.querySelector('header');
+
 window.addEventListener('scroll', function() {
-    const header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 0)
   });
+
+
+//theme oggle
+const sun = document.querySelector('.fa-sun')
+const moon = document.querySelector('.fa-moon')
+
+sun.addEventListener('click', () => {
+    sun.classList.add('hide')
+    moon.classList.remove('hide')
+    document.body.classList.remove('dark')
+})
+
+moon.addEventListener('click', () => {
+    moon.classList.add('hide')
+    sun.classList.remove('hide')
+    document.body.classList.add('dark')
+})

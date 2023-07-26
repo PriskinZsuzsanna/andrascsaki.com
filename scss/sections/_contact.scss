@@ -1,5 +1,5 @@
 .contact {
-    background-color: $light;
+    background-color:var(--light);
 }
 
 .social-contact {
@@ -16,7 +16,7 @@
     }
 
     & > * i {
-        color: $dark;
+        color: var(--dark);
         translate: 0 0;
         scale: 1;
         transition: 

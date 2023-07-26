@@ -1,5 +1,5 @@
 .about {
-    background-color: $white;
+    background-color: var(--white);
 
     img {
         border-radius: .6rem;
@@ -38,12 +38,12 @@
 }
 
 .tab-links.active-link {
-    background-color: $dark;
-    color: $white;
+    background-color: var(--dark);
+    color: var(--white);
 }
 
 .tab-links:not(.active-link) {
-    border: 1px solid $dark;
+    border: 1px solid var(--dark);
 }
 
 .tab-contents:not(.active-tab) {
@@ -62,8 +62,8 @@
     a {
         padding: .4rem 1.6rem;
         border-radius: 2rem;
-        background-color: $dark;
-        color: $white;
+        background-color: var(--dark);
+        color: var(--white);
         cursor: pointer;
     }
 }

@@ -16,6 +16,7 @@ header {
         height: 3.5rem;
         
         @include flex-between;
+        align-items: center;
 
         ul {
             display: none;
@@ -59,6 +60,7 @@ header {
             &:hover {
                 scale: 0.94;
             }
+
         }
     }
     
@@ -73,8 +75,9 @@ header {
 
 header.sticky {
     background-color: #efefefb9;
+    background-color: var(--light);
     backdrop-filter: blur(10px);
     a, i {
-        color: $dark
+        color: var(--dark)
     }
 }
