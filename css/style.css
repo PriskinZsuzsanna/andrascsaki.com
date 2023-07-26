@@ -368,8 +368,7 @@ header .menu-toggle {
 }
 
 header.sticky {
-  background-color: rgba(239, 239, 239, 0.7254901961);
-  background-color: var(--light);
+  background-color: var(--sticky-nav);
   backdrop-filter: blur(10px);
 }
 header.sticky a, header.sticky i {
@@ -753,7 +752,6 @@ header.sticky a, header.sticky i {
 .timeline-area div {
   background: var(--frosted);
   box-shadow: 1px 1px 4px var(--frosted);
-  backdrop-filter: blur(3px);
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -1060,6 +1058,7 @@ img {
 body {
   width: 100%;
   min-height: 100vh;
+  --sticky-nav: rgba(219, 216, 216, 0.7019607843);
   --light: rgba(3, 32, 39, 0.0509803922);
   --color: rgba(89, 88, 90, 0.3137254902);
   --dark: #032027;
@@ -1071,6 +1070,7 @@ body {
 }
 
 body.dark {
+  --sticky-nav: #2c3739;
   --light: #2c3739;
   --color: #efefef;
   --dark: #efefef;

@@ -1,3 +1,4 @@
+$sticky-nav: #dbd8d8b3;
 $light: #0320270d;
 $color: #59585a50;
 $dark: #032027;
@@ -13,6 +14,7 @@ $d-dark: rgba(47, 66, 70, 0.736);
 $d-white: #70aab2;
 $d-transparent: #11191a56;*/
 
+$d-sticky-nav: #2c3739;
 $d-light: #2c3739;
 $d-color: #efefef;
 $d-dark: #efefef;
@@ -23,6 +25,7 @@ $d-frosted-hover: #8d8b8bb3;
 $d-transparent: #11191a56;
 
 @mixin light {
+    --sticky-nav: #{$sticky-nav};
     --light: #{$light};
     --color: #{$color};
     --dark: #{$dark};
@@ -34,6 +37,7 @@ $d-transparent: #11191a56;
 }
 
 @mixin dark {
+    --sticky-nav: #{$d-sticky-nav};
     --light: #{$d-light};
     --color: #{$d-color};
     --dark: #{$d-dark};

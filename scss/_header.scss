@@ -74,8 +74,7 @@ header {
 }
 
 header.sticky {
-    background-color: #efefefb9;
-    background-color: var(--light);
+    background-color: var(--sticky-nav);
     backdrop-filter: blur(10px);
     a, i {
         color: var(--dark)

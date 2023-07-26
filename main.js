@@ -4,10 +4,31 @@ const openIcon = document.querySelector('.hamburger')
 const closeIcon = document.querySelector('.close')
 const nav = document.querySelector('nav')
 
-nav.addEventListener('click', () => {
+/*nav.addEventListener('click', () => {
     toggleMenuIcon()
     toggleUl()
+})*/
+
+openIcon.addEventListener('click', () => {
+    toggleMenuIcon()
+    nav.classList.add('open')
 })
+closeIcon.addEventListener('click', () => {
+    toggleMenuIcon()
+    nav.classList.remove('open')
+})
+
+nav.addEventListener('click', outsideClick);
+
+
+function outsideClick (e) {
+    if(e.target.classList.contains('item')){
+        nav.classList.remove('open')
+        openIcon.classList.remove('hide')
+        closeIcon.classList.add('hide')
+    }
+};
+
 
 function toggleMenuIcon() {
     if (openIcon.classList.contains('hide')) {
@@ -73,7 +94,7 @@ window.addEventListener('scroll', function() {
   });
 
 
-//theme oggle
+//theme toggle
 const sun = document.querySelector('.fa-sun')
 const moon = document.querySelector('.fa-moon')
 
