@@ -1,0 +1,80 @@
+header {
+    background: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 900;
+    backdrop-filter: blur(20px);
+
+    .logo a {
+        font-size: 1.3rem;
+    }
+
+    nav {
+        width: min(100%, 1600px);
+        padding-inline: 4%;
+        margin-inline: auto;
+        height: 3.5rem;
+        
+        @include flex-between;
+
+        ul {
+            display: none;
+        
+            @include mediaq (tablet) {
+                display: flex;
+                gap: 2rem;
+            }
+        }
+    }
+
+    nav.open {
+        width: min(100%, 1600px);
+        padding-inline: 4%;
+        height: 100vh;
+        @include flex-center;
+        flex-direction: column;
+        gap: 5rem;
+    
+        @include mediaq (tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+            height: 3.5rem;
+        }
+    
+        ul {
+            @include flex-center;
+            flex-direction: column;
+            gap: 2rem;
+            
+            @include mediaq (tablet) {
+                flex-direction: row;
+                
+            }
+        }
+        
+        li {
+            scale: 1;
+            transition: scale .3s ease-in-out;
+
+            &:hover {
+                scale: 0.94;
+            }
+        }
+    }
+    
+    .menu-toggle {
+        cursor: pointer;
+    
+        @include mediaq (tablet) {
+            display: none;
+        }
+    }
+}
+
+header.sticky {
+    background-color: #efefefb9;
+    backdrop-filter: blur(10px);
+    a, i {
+        color: $dark
+    }
+}

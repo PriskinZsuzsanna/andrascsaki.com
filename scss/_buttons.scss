@@ -1,0 +1,28 @@
+
+
+%btn {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 20px;
+    margin: 3px;
+    scale: 1;
+    transition: scale .3s linear;
+
+    &:hover{
+        scale: .98;
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+    //background-color: lighten($primary-color, 10%);
+    @include set-background(lighten($primary-color, 10%))
+}
+
+.btn-secondary {
+    @extend %btn;
+    //background-color: $secondary-color;
+    @include set-background(lighten($secondary-color, 10%))
+}
+
+//we can extend classes and id, don't have to use %

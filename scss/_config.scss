@@ -1,0 +1,28 @@
+$light-color: #f4f4f4;
+$primary-color: #8fa8c9;
+$primary-color: #0e6cff;
+$secondary-color: #ff8700;
+
+@function set-text-color ($color) {
+    @if(lightness($color) > 60) {
+        @return #333;
+    } @else {
+        @return #fff;
+    }
+}
+
+@mixin set-background ($color){
+    background-color: $color;
+    color: set-text-color($color)
+}
+
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts {
+    .m-#{$space} {
+        margin: #{$space}rem;
+    }
+    .my-#{$space} {
+        margin-block: #{$space}rem ;
+    }
+}

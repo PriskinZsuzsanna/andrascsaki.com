@@ -1,0 +1,122 @@
+.music {
+    background-color: $light;
+
+    img {
+        border-radius: .6rem;
+        
+    }
+
+    .text p{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    
+    .text a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    i {
+        color: $dark;
+    }
+}
+
+.tab-music-titles {
+    width: min(100%, 800px);
+    margin-inline: auto;
+    margin-block: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:.6rem;
+    
+    @media ( width > 460px) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.tab-music-titles > * {
+    justify-self: center;
+    padding: .4rem;
+    width: 80px;
+    text-align: center;
+    border-radius: 2rem;
+    cursor: pointer;
+    
+    @media ( width > 460px) {
+        width: 130px;
+    }
+    @media ( width > 660px) {
+        width: 200px;
+    }
+}
+
+.tab-music-links.active-link {
+    background-color: $dark;
+    color: $white;
+}
+
+.tab-music-links:not(.active-link) {
+    border: 1px solid $dark;
+}
+
+.tab-music-contents:not(.active-tab) {
+    display: none;
+}
+
+.flex-flow a:nth-of-type(1) {
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.flex-flow a:nth-of-type(2) {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.timeline-area-cd {
+    background: url('../../images/img/concerts/PH2_5488.jpg') no-repeat top/cover;
+    border-radius: .5rem;
+    padding: .5rem;
+    position: relative;
+
+    &::after {
+        @include pseudo;
+        background-color: #908f8f7c;
+        border-radius: .5rem;
+        z-index: 1;
+    }
+
+    
+    .cd-item {
+        width: min(100%, 266px);
+        padding: .5rem;
+        background: #ffffff46;
+        margin: 1rem;
+        border-radius: .5rem;
+        box-shadow: 1px 1px 4px #ffffff46;
+        backdrop-filter: blur(8px);
+        scale:1;
+        z-index: 2;
+        transition: scale .3s ease-in-out, background .3s ease-in-out;
+
+        .cd-item-body {
+            text-align: center;
+        }
+
+        &:hover {
+            scale: 1.03;
+            background-color: #e8e5e5b3;
+            color: #000;
+            cursor:pointer;
+        }
+      
+    }
+
+    .cd-item:nth-of-type(3) .flex-auto {
+        gap: .6rem
+    }
+}
+

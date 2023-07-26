@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Andras Csaki</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">
+        <h1><a href="#">András Csáki</a></h1>
+      </div>
+      <ul>
+        <li><a href="#" class="item">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#music">My Music</a></li>
+        <li><a href="#concerts">Concerts</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle">
+        <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+        <div class="close hide"><i class="fa-solid fa-xmark"></i></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="css-container">
+        <div class="social">
+          <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" target="_blank"><i class="fa-solid fa-phone"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-apple"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="css-container">
+        <h2>About Me</h2>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('tab1')">Bio - en</p>
+          <p class="tab-links" onclick="opentab('tab2')">Bio - hu</p>
+          <p class="tab-links" onclick="opentab('tab3')">Photos</p>
+        </div>
+
+        <div class="tab-contents active-tab" id="tab1">
+          <div class="grid2-1">
+            <div class="grid2">
+              <h3>Bio</h3>
+
+              <p>András Csáki was born in Budapest 1981, and began to play the guitar at the age of 11.
+                He graduated at the Liszt Ferenc Academy of Music with honor in 2007.
+                In 2012/2013 he pursued graduate studies in the University of Southern California as a
+                student
+                of Scott Tennant.
+                He received his Doctorate degree in 2014 at the Liszt Ferenc Academy of Music.
+              </p>
+              <p>Since 1995 András has been a regular participant of international master classes all
+                over
+                the
+                world,
+                including master classes held by Manuel Barrueco, Leo Brouwer, Abel Carlevaro, Costas
+                Cotsiolis,
+                David Russell,
+                Angel and Pepe Romero.
+              </p>
+              <p>Until the year of 2011 he received 24 prizes,
+                among others he was awarded with the first prize in the 51st Tokyo International Guitar
+                Competition in 2008,
+                and in the 42nd "Michele Pittaluga" Guitar Competition in Alessandria, Italy 2009,
+                Julian Arcas Guitar Competition, Spain 2011.
+              </p>
+              <p>Besides solo recitals, he is also devoted to chamber music.
+                He has had several opportunities to play guitar concertos with symphonic orchestras in
+                Hungary
+                and abroad.
+              </p>
+              <p> He has frequently been asked to give master classes in various countries,
+                such as China, Estonia, France, Great Britain, Greece, India, Romania, Russia, USA and
+                his
+                native Hungary.
+              </p>
+              <div class="download"><a href="#">Download</a></div>
+            </div>
+            <div class="grid1">
+              <img class="rounded-3" src="images/img-new/photoGallery/phone.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+        <div class="tab-contents" id="tab2">
+          <div class="grid2-1">
+            <div class="grid2 ">
+
+              <h3>Életrajz</h3>
+              <h4>Tanulmányok</h4>
+              <p>1996–2000: Bartók Béla Zeneművészeti Szakközépiskola és Gimnázium (tanár: Szilvágyi
+                Sándor) <br>
+                2000–2002: Győr, Zeneművészeti Főiskola (tanár: Roth Ede, Arnóth Balázs) <br>
+                2002–2007: Liszt Ferenc Zeneművészeti Egyetem – kitüntetéses diploma (tanár:Eötvös
+                József) <br>
+                2007–2010: Zeneakadémia Doktori Iskolájának állami ösztöndíjas hallgatója <br>
+                2011–2012 University of Southern California, Thornton School of Music hallgatója
+                (tanárai: Scott
+                Tennant, William Kannengiser, Pepe Romero) <br>
+                2014-ben DLA fokozatot szerzett a Liszt Ferenc Zeneművészeti Egyetemen
+              </p>
+              <h4>Mesterkurzusok</h4>
+              <p>1995-től aktív résztvevője a hazai és nemzetközi mesterkurzusoknak. Többek között részt
+                vett
+                Odair Assad, Manuel Barrueco, Leo Brouwer, Abel Carlevaro, Costas Cotsiolis, Aniello
+                Desiderio,
+                Zoran Dukic, Pablo Marquez, Thomas Müller-Pering,
+                Judicaël Perroy, Angel Romero, Pepe Romero, David Russell, Kováts Barna és Vásáry Tamás
+                mesterkurzusain.
+              </p>
+              <h4>Oktatói tevékenység</h4>
+              <p>2005–2014: Bartók Béla Zeneművészeti Szakközépiskola és Gimnázium <br>
+                2009- : Liszt Ferenc Zeneművészeti Egyetem <br>
+                2011–2020: Szegedi Tudományegyetem Zeneművészeti Kar <br>
+                2021-ben habilitált a Liszt Ferenc Zeneművészeti Egyetemen
+              </p>
+            </div>
+            <div class="grid1">
+              <img src="images/img-new/photoGallery/phone.jpg" alt="">
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <p>Rendszeresen tart módszertani továbbképzéseket és gitárkurzusokat a hazai felsőfokú- és
+                középfokú intézményekben, illetve a hazai nemzetközi gitárfesztiválokon és kurzusokon.
+                Első nemzetközi mesterkurzusát 2005-ben tartotta az Egyesült Államokban (Dallasban).
+                Azóta
+                rendszeresen felkérik nemzetközi gitárkurzusok tartására. Tanított már - az Egyesült
+                Államokon
+                kívül – Angliában, Ausztráliában, Csehországban, Szlovákiában, Franciaországban,
+                Görögországban,
+                Izraelben,
+                Kínában, Lengyelországban, Németországban, Romániában, Oroszországban, Spanyolországban,
+                Ukrajnában és Vietnámban.
+              </p>
+              <h4>Bemutatók & hangversenyek</h4>
+              <p>Koncertezett többek között Angliában, Ausztráliában, Ausztriában, Bosznia-Hercegovinában,
+                Csehországban, Chilében, az Egyesült Államokban, Franciaországban, Görögországban,
+                Grúziában,
+                Indiában, Izraelben, Japánban, Kínában, Lengyelországban, Montenegróban, Norvégiában,
+                Olaszországban, Oroszországban, Spanyolországban, Romániában, Szerbiában, Szlovákiában,
+                Ukrajnában, Venezuelában és Vietnámban. Korosztályának egyik legaktívabb magyar
+                klasszikusgitárosaként versenyművek és kamaraprodukciók előadója idehaza és külföldön.
+                Szólistaként játszott szinte valamennyi neves magyar-, valamint számos neves külföldi
+                szimfonikus és kamarazenekarral. Dolgozott itthon és külföldön ismert és elismert
+                karmesterekkel. Gitárosként gyakran és szívesen vállalkozik XX. századi és kortárs
+                szerzők
+                műveinek előadására, bemutatására.
+              </p>
+              <p>A koncertekről részletesen lásd itt: <span><a href="#">mtmt.hu</a></span></p>
+              <h4>Lemezfelvételek</h4>
+              <p> 2009-ben elkészítette első önálló CD lemezét "My Favourite Pieces", ("Kedvenc
+                darabjaim")
+                címmel. A szóló lemezen Bach, Giuliani, Barrios, Morel, Farkas és Castelnuovo-Tedesco
+                művei
+                csendülnek fel. <br>
+                2010-ben Kanadában, Norbert Kraft zenei vezetésével készült el második szólólemeze a
+                Naxos
+                Classic "Versenygyőztesek" sorozatában. A nagy sikerű "Guitar Recital" c. lemezen Bach,
+                Britten,
+                Duarte és Castelnuovo-Tedesco darabokat játszik. A CD-je műsorából két mű is bekerült
+                Enrique
+                Robichaud kanadai zenetudós Guitar’s Top 100 című könyvébe. <br>
+                2012-ben a spanyol a Julian Arcas Nemzetközi Gitárverseny győzteseként készíthette el
+                spanyol
+                műveket tartalmazó lemezét. Ezen Francisco Tarrega, Isaac Albéniz, Joaquín Rodrigo,
+                Enrique
+                Granados, Joaquín Turina, Joaquín Malats és Frederico Moreno Torroba darabját
+                szólaltatja
+                meg.
+                <br>
+                2015-ben, az Ágai Karola és Szendrey-Karper László Emlékérem első gitárművész
+                kitüntetettjeként
+                készíthette el Bach lemezét, ami Bach négy lantszvitjét tartalmazza: g-moll szvit, BWV
+                995
+                (a-mollban), e-moll szvit, BWV 996, c-moll szvit, BWV 997 és E-dúr szvit, BWV 1006a.
+                <br>
+                2021-ben a Nemzeti Kulturális Alap támogatásával jelent meg a Hungarian and Spanish
+                Sonatas
+                from
+                the 20th Century (In Memoriam Sándor Szilvágyi) c. lemeze. Ezen Rózsa Miklós: Sonata for
+                Guitar
+                Op. 42, Farkas Ferenc: Sonata per chiatara sola, Kovács Barna: Sonata Nova és Antonio
+                Jose:
+                Sonata para guitara c. műveit játssza.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid2-1">
+            <div class="grid2">
+              <h4>Nemzetközi versenyeken elért első helyezések</h4>
+              <p>2011: XII. Julián Arcas Nemzetközi Gitárverseny (Almeria, Spanyolország) <br>
+                2010: Nikita Koshkin Nemzetközi Gitárverseny (Kalkutta, India) <br>
+                2009: 42. Michele Pittaluga Nemzetközi Gitárverseny (Alessandria, Olaszország) <br>
+                2008: 51. Tokiói Nemzetközi Gitárverseny (Tokió, Japán) <br>
+                2005: X. Forum Gitarre Wien Nemzetközi Gitárverseny (Bécs, Ausztria) <br>
+                2005: XXXV. International Jeunesses Musicales (Belgrád, Szerbia-Montenegro) <br>
+                2004: J. E. Jurkowski Nemzetközi Gitárverseny (Tychy, Lengyelország) <br>
+                2004: John Duarte Nemzetközi Gitárverseny (Rust, Ausztria) <br>
+                2003: Johann Kaspar Mertz Nemzetközi Gitárversenyen (Pozsony, Szlovákia) <br>
+                1999: XXVI. Dr. Luis Sigall Nemzetközi Zenei Verseny (Vina del Mar, Chile) <br>
+                1999: IV. Anna Amalia Nemzetközi Ifjúsági Gitárverseny (Weimar, Németország) <br>
+              </p>
+              <h4>Nemzetközi versenyeken elért második helyezések</h4>
+              <p>2011: 45. Francesco Tárrega Nemzetközi Gitárverseny (Benicassim, Spanyolország) <br>
+                2011: XXIX. GFA Nemzetközi Előadóművész Verseny (Columbus/Georgia, USA) <br>
+                2010:18. Hubert Käppel Nemzetközi Gitárverseny (Koblenz, Németország) <br>
+                2009: X. Julián Arcas Nemzetközi Gitárverseny (Almeria, Spanyolország) <br>
+                2008: Printemps de la Guitare Nemzetközi Gitárverseny (Charleroi, Belgium) <br>
+                2007: Heinsberg Nemzetközi Gitárversenyen (Heinsberg, Németország) <br>
+                2007: I. Horváth Nemzetközi Gitárverseny (Split, Horvátország) <br>
+                2006: Karl Scheit Nemzetközi Gitárversenyen (Bécs, Ausztria) <br>
+                2005: 38. Michele Pittaluga Nemzetközi Gitárverseny (Alessandria, Olaszország) <br>
+                1997: Szendrey-Karper László Nemzetközi Gitárverseny (Esztergom, Magyarország)
+              </p>
+              <h4>Díjak, ösztöndíjak, kitüntetések</h4>
+              <p>2008, 2009 és 2010: Fischer Annie ösztöndíj <br>
+                2009: Duna Televízió "Magyar Csillagok" díja, <br>
+                2009: Prima Primissima Alapítvány Junior Prima zeneművészeti díja <br>
+                2010: Márciusi Ifjak Díj <br>
+                2015: Ágai Karola és Szendrey-Karper László Emlékérem <br>
+                2021: MMA zeneművészeti ösztöndíj <br>
+                2022: Liszt-Ferenc-díj
+              </p>
+            </div>
+            <div class="grid1">
+              <img src="images/img-new/photoGallery/11.jpg" alt="">
+            </div>
+            <div class="download"><a href="#">Letöltés</a></div>
+          </div>
+
+
+        </div>
+        <div class="tab-contents" id="tab3">
+          <div class="grid-auto">
+            <div>
+              <img src="images/img-new/photoGallery/2.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/1.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/21.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/3.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/19.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/7.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/4.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/14.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/8.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/10.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/22.jpg" alt="András Csáki">
+            </div>
+            <div>
+              <img src="images/img-new/photoGallery/13.jpg" alt="András Csáki">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="music" id="music">
+      <div class="css-container">
+        <h2>My Music</h2>
+        <div class="tab-music-titles ">
+          <p class="tab-music-links active-link" data-section="#tab-music-1">Videos</p>
+          <p class="tab-music-links" data-section="#tab-music-2">Audio</p>
+          <p class="tab-music-links" data-section="#tab-music-3">CDs</p>
+        </div>
+
+        <div class="tab-music-contents active-tab" id="tab-music-1">
+          <div class="flex-auto">
+            <div>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/bg1Rwg6HpMY"
+                allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GRc_n5LnxJE"
+                allowfullscreen></iframe>
+            </div>
+            <div>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/G9cZwiEGzJY"
+                allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="text">
+            <p>For further videos, please visit my channel: </p>
+            <a href="#" target="_blank"><i class="fa-brands fa-youtube display-6 mx-2"></i></a>
+          </div>
+
+        </div>
+
+        <div class="tab-music-contents" id="tab-music-2">
+          <div class="grid-auto">
+            <div>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/artist/5QWeq4REzRKmgcCAyDS5Ie?utm_source=generator" width="100%"
+                height="450" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </div>
+            <div>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/album/7IBDdDqxmNf7FgKBRJtJ7L?utm_source=generator" width="100%"
+                height="450" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="text d-flex justify-content-center align-items-center mx-auto my-4">
+            <p>Find me on: </p>
+            <div class="flex-flow">
+              <a href="#" target="_blank"><i class="fa-brands fa-spotify display-6 mx-2"></i></a>
+              <a href="#" target="_blank"><i class="fa-brands fa-apple display-6 mx-2"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-music-contents" id="tab-music-3">
+          <div class="timeline-area-cd flex-center">
+            <div class="cd-area flex-center">
+              <div class="flex-auto">
+
+                <div class="cd-item">
+                  <figure>
+                    <img src="images/img/cdResized/sonatas.jpg"
+                      alt="Hungarian and Spanish Sonatas from the 20th Century">
+                    <figcaption class="hide">Hungarian and Spanish Sonatas from the 20th Century</figcaption>
+                  </figure>
+
+                  <div class="cd-item-body">
+                    <h4 class="cd-item-title ">20th Century Sonatas</h4>
+                    <div class="flex-auto">
+                      <p>Miklós Rózsa</p>
+                      <p>Ferenc Farkas</p>
+                      <p>Barna Kováts</p>
+                      <p>Antonio Jose</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cd-item">
+                  <figure>
+                    <img src="images/img/cdResized/bach1.jpg" alt="J.S.Bach 4 Lute Suites">
+                    <figcaption class="hide">J.S.Bach 4 Lute Suites</figcaption>
+                  </figure>
+
+                  <div class="cd-item-body">
+                    <h4 class="cd-item-title ">Bach Lute Suites</h4>
+                    <div class="flex-auto">
+                      <p>BWV 995</p>
+                      <p>BWV 996</p>
+                      <p>BWV 997</p>
+                      <p>BWV 1006a</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="cd-item">
+                  <figure>
+                    <img src="images/img/cdResized/spanish.jpeg" alt="Spanish Pieces">
+                    <figcaption class="hide">Spanish Pieces</figcaption>
+                  </figure>
+
+                  <div class="cd-item-body">
+                    <h4 class="cd-item-title ">Spanish Pieces</h4>
+                    <div class="flex-auto">
+                      <p>Tárrega</p>
+                      <p>Albéniz</p>
+                      <p>Rodrigo</p>
+                      <p>Granados</p>
+                      <p>Turina</p>
+                      <p>Malats</p>
+                      <p>Torroba</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cd-item">
+                  <figure>
+                    <img src="images/img/cdResized/naxos.jpeg" alt="Naxos Laureate Series">
+                    <figcaption class="hide">Naxos Laureate Series</figcaption>
+                  </figure>
+
+                  <div class="cd-item-body">
+                    <h4 class="cd-item-title ">Naxos Laureate Series</h4>
+                    <div class="flex-auto">
+                      <p>Bach</p>
+                      <p>Britten</p>
+                      <p>Duarte</p>
+                      <p>Castelnuovo-Tedesco</p>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="cd-item">
+                  <figure>
+                    <img src="images/img/cdResized/favourite.jpeg" alt="My Favourite Pieces">
+                    <figcaption class="hide">My Favourite Pieces</figcaption>
+                  </figure>
+
+                  <div class="cd-item-body">
+                    <h4 class="cd-item-title ">My Favourite Pieces</h4>
+                    <div class="flex-auto">
+                      <p>Bach</p>
+                      <p>Giuliani</p>
+                      <p>Barrios</p>
+                      <p>Morel</p>
+                      <p>Ferenc Farkas</p>
+                      <p>Tedesco</p>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="concerts" id="concerts">
+      <div class="css-container">
+        <h2 class="sub-title text-center">Upcoming Concerts</h2>
+        <div class="timeline-area">
+          <div>
+            <h5>Harmonia Cordis International Guitar Festival</h5>
+            <p>Targu Mures</p>
+            <p>2023.08.08-13.</p>
+          </div>
+          <div>
+            <h5>Bach 4 Lute Suites</h5>
+            <p>Budapest Music Academy Solti Hall</p>
+            <p>2023.10.04</p>
+          </div>
+          <div>
+            <h5>Láng István: Concitato</h5>
+            <p>Budapest "Mini Fesztivál"</p>
+            <p>2022.12.12</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="css-container">
+        <h2>Contact Me</h2>
+        <div class="social-contact">
+          <a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" target="_blank"><i class="fa-solid fa-phone"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook display-5"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin display-5"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-instagram display-5"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-youtube display-5"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-spotify display-5"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-apple display-5"></i></a>
+        </div>
+        <div class="carousel-wrapper">
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="image-1"></div>
+              <div class="image-2"></div>
+              <div class="image-3"></div>
+              <div class="image-4"></div>
+              <div class="image-5"></div>
+              <div class="image-6"></div>
+              <div class="image-7"></div>
+              <div class="image-8"></div>
+              <div class="image-9"></div>
+              <div class="image-10"></div>
+         
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <h4>András Csáki is a d'Addario Artist</h5>
+      <p>Copyright &copy; 2023 András Csáki</p>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>

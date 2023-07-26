@@ -1,0 +1,208 @@
+.contact {
+    background-color: $light;
+}
+
+.social-contact {
+    width: min(90%, 400px);
+    margin-inline: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    @media (width < 300px) {
+        margin-bottom: 3rem;
+    }
+
+    & > * i {
+        color: $dark;
+        translate: 0 0;
+        scale: 1;
+        transition: 
+            translate .3s  ease-in-out,
+            scale .3s  ease-in-out;
+    }
+    
+    & > *:hover i{
+        translate: 0 -.2rem;
+        scale: 1.1;
+    }
+}
+
+$size-width: 400px;
+$size-height: 250px;
+
+.carousel-wrapper {
+  width: 100%;
+  height: min(70vw, 300px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  margin-top: 1.4rem;
+}
+
+.carousel-container {
+  border-radius: .5rem;
+  width: $size-width;
+  max-width: 100%;
+  height: $size-height;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carousel {
+  display: flex;
+  width: $size-width * 10;
+  animation: sliding 50s infinite;
+  div {
+    width: $size-width;
+    height: min(60vw, 300px);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  &:hover {
+    animation-play-state: paused;
+  }
+  .image-1 {
+    background-image: url("../../images/img-new/photoGallery/1.jpg");
+    width: $size-width;
+  }
+  .image-2 {
+    background-image: url("../../images/img-new/photoGallery/2.jpg");
+  }
+  .image-3 {
+    background-image: url("../../images/img-new/photoGallery/16.jpg");
+  }
+  .image-4 {
+    background-image: url("../../images/img-new/photoGallery/14.jpg");
+  }
+  .image-5 {
+    background-image: url("../../images/img-new/photoGallery/3.jpg");
+  }
+  .image-6 {
+    background-image: url("../../images/img-new/photoGallery/8.jpg");
+  }
+  .image-7 {
+    background-image: url("../../images/img-new/photoGallery/13.jpg");
+  }
+  .image-8 {
+    background-image: url("../../images/img-new/photoGallery/12.jpg");
+  }
+  .image-9 {
+    background-image: url("../../images/img-new/photoGallery/10.jpg");
+  }
+  .image-10 {
+    background-image: url("../../images/img-new/photoGallery/4.jpg");
+  }
+
+}
+
+@keyframes sliding {
+  0% {
+    opacity: .7;
+  }  
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  13% {
+    opacity: .7;
+  }
+
+  15% {
+    transform: translateX(-$size-width);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(-$size-width);
+  }
+  23% {
+    opacity: .7;
+  }
+  25% {
+    transform: translateX(-$size-width * 2);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-$size-width * 2);
+  }
+  33% {
+    opacity: .7;
+  }
+  35% {
+    transform: translateX(-$size-width * 3);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-$size-width * 3 );
+  }
+  43% {
+    opacity: .7;
+  }
+  45% {
+    transform: translateX(-$size-width * 4);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-$size-width * 4);
+  }
+  53% {
+    opacity: .7;
+  }
+  55% {
+    transform: translateX(-$size-width * 5);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(-$size-width * 5);
+  }
+  63% {
+    opacity: .7;
+  }
+  65% {
+    transform: translateX(-$size-width * 6);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(-$size-width * 6);
+  }
+  73% {
+    opacity: .7;
+  }
+  75% {
+    transform: translateX(-$size-width * 7);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-$size-width * 7);
+  }
+  83% {
+    opacity: .7;
+  }
+  85% {
+    transform: translateX(-$size-width * 8);
+    opacity: 1;
+  }
+  90% {
+    transform: translateX(-$size-width *8);
+  }
+  93% {
+    opacity: .7;
+  }
+  95% {
+    transform: translateX(-$size-width * 9);
+    opacity: 1;
+  }
+  98% {
+    transform: translateX(-$size-width * 9);
+    opacity: .7;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
+

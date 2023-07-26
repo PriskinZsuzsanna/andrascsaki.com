@@ -1,0 +1,105 @@
+//position absolute
+
+@mixin position ($position, $top, $bottom, $right, $left, $z-index) {
+    position: $position;
+    top: $top;
+    bottom: $bottom;
+    right: $right;
+    left: $left;
+    z-index: $z-index;
+}
+
+@mixin pseudo () {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+@mixin flex ($justify, $align, $gap, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+    flex-direction: $direction;
+}
+
+@mixin flex-column () {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-center () {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid2-1 {
+    display: grid;
+    @include mediaq (laptop) {
+        gap: 2rem;
+        grid-template-columns: 3fr 1fr;
+    }
+    
+    @include mediaq (desktop) {
+        gap: 2rem;
+        grid-template-columns: 3fr 1fr;
+    }
+
+}
+
+.grid2 {
+    @include mediaq (laptop) {
+        align-self: center;
+    }
+}
+.grid1 {
+    display: none;
+    @include mediaq (laptop) {
+        display: block;
+        align-self: center;
+    }
+    @include mediaq (desktop) {
+        padding: 2rem;
+    }
+}
+
+.grid-auto {
+    width: min(100%, 1400px);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+
+    @media screen and (width <= 320px){
+        grid-template-columns: 100%
+    }
+}
+
+.flex-auto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.flex-flow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
