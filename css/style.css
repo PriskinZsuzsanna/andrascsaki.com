@@ -378,18 +378,18 @@ header.sticky a, header.sticky i {
 
 .hero {
   height: 100vh;
-  background: url("/images/img-new/Home/Mobile/PH2_5385.jpg") no-repeat center/cover;
+  background: url("images/img-new/Home/Mobile/PH2_5385.jpg") no-repeat center/cover;
   display: flex;
   align-items: center;
 }
 @media (min-width: 976px) {
   .hero {
-    background: url("/images/img-new/Home/Desktop/PH2_5398.jpg") no-repeat top center/cover;
+    background: url("images/img-new/Home/Desktop/PH2_5398.jpg") no-repeat top center/cover;
   }
 }
 @media (min-width: 1670px) {
   .hero {
-    background: url("/images/img-new/Home/Desktop/PH2_5423.jpg") no-repeat top center/cover;
+    background: url("images/img-new/Home/Desktop/PH2_5423.jpg") no-repeat top center/cover;
   }
 }
 
@@ -698,7 +698,7 @@ header.sticky a, header.sticky i {
 }
 
 .timeline-area-cd {
-  background: url("../../images/img/concerts/PH2_5488.jpg") no-repeat top/cover;
+  background: url("../..images/img/concerts/PH2_5488.jpg") no-repeat top/cover;
   border-radius: 0.5rem;
   padding: 0.5rem;
   position: relative;
@@ -740,7 +740,7 @@ header.sticky a, header.sticky i {
 }
 
 .timeline-area {
-  background: url("/images/img-new/photoGallery/13.jpg") no-repeat top/cover;
+  background: url("images/img-new/photoGallery/13.jpg") no-repeat top/cover;
 }
 
 .timeline-area {
@@ -852,35 +852,35 @@ header.sticky a, header.sticky i {
   animation-play-state: paused;
 }
 .carousel .image-1 {
-  background-image: url("/images/img-new/photoGallery/1.jpg");
+  background-image: url("images/img-new/photoGallery/1.jpg");
   width: 400px;
 }
 .carousel .image-2 {
-  background-image: url("/images/img-new/photoGallery/2.jpg");
+  background-image: url("images/img-new/photoGallery/2.jpg");
 }
 .carousel .image-3 {
-  background-image: url("/images/img-new/photoGallery/16.jpg");
+  background-image: url("images/img-new/photoGallery/16.jpg");
 }
 .carousel .image-4 {
-  background-image: url("/images/img-new/photoGallery/14.jpg");
+  background-image: url("images/img-new/photoGallery/14.jpg");
 }
 .carousel .image-5 {
-  background-image: url("/images/img-new/photoGallery/3.jpg");
+  background-image: url("images/img-new/photoGallery/3.jpg");
 }
 .carousel .image-6 {
-  background-image: url("/images/img-new/photoGallery/8.jpg");
+  background-image: url("images/img-new/photoGallery/8.jpg");
 }
 .carousel .image-7 {
-  background-image: url("/images/img-new/photoGallery/13.jpg");
+  background-image: url("images/img-new/photoGallery/13.jpg");
 }
 .carousel .image-8 {
-  background-image: url("/images/img-new/photoGallery/12.jpg");
+  background-image: url("images/img-new/photoGallery/12.jpg");
 }
 .carousel .image-9 {
-  background-image: url("/images/img-new/photoGallery/10.jpg");
+  background-image: url("images/img-new/photoGallery/10.jpg");
 }
 .carousel .image-10 {
-  background-image: url("/images/img-new/photoGallery/4.jpg");
+  background-image: url("images/img-new/photoGallery/4.jpg");
 }
 
 @keyframes sliding {
