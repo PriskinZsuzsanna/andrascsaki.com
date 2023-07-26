@@ -80,7 +80,11 @@ body.dark {
 }
 
 section {
-    padding-block: 4rem 2rem;
+    padding-block: 4.5rem 2rem;
+
+    @include mediaq (laptop) {
+        padding-block: 5rem 4rem;
+    }
 }
 
 .css-container {
