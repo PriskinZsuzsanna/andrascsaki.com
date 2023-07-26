@@ -1,15 +1,15 @@
 .hero {
     height: 100vh;
-    background: url('/images/img-new/Home/Mobile/PH2_5385.jpg') no-repeat center/cover;
+    background: url('images/img-new/Home/Mobile/PH2_5385.jpg') no-repeat center/cover;
     display: flex;
     align-items: center;
 
     @include mediaq (laptop) {
-        background: url('/images/img-new/Home/Desktop/PH2_5398.jpg') no-repeat top center/cover;
+        background: url('images/img-new/Home/Desktop/PH2_5398.jpg') no-repeat top center/cover;
     }
 
     @include mediaq (desktop) {
-        background: url('/images/img-new/Home/Desktop/PH2_5423.jpg') no-repeat top center/cover;
+        background: url('images/img-new/Home/Desktop/PH2_5423.jpg') no-repeat top center/cover;
     }
 }
 
