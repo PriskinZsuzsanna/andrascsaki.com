@@ -378,18 +378,18 @@ header.sticky a, header.sticky i {
 
 .hero {
   height: 100vh;
-  background: url("../../images/img-new/Home/Mobile/PH2_5385.jpg") no-repeat center/cover;
+  background: url("/images/img-new/Home/Mobile/PH2_5385.jpg") no-repeat center/cover;
   display: flex;
   align-items: center;
 }
 @media (min-width: 976px) {
   .hero {
-    background: url("../../images/img-new/Home/Desktop/PH2_5398.jpg") no-repeat top center/cover;
+    background: url("/images/img-new/Home/Desktop/PH2_5398.jpg") no-repeat top center/cover;
   }
 }
 @media (min-width: 1670px) {
   .hero {
-    background: url("../../images/img-new/Home/Desktop/PH2_5423.jpg") no-repeat top center/cover;
+    background: url("/images/img-new/Home/Desktop/PH2_5423.jpg") no-repeat top center/cover;
   }
 }
 
@@ -740,7 +740,7 @@ header.sticky a, header.sticky i {
 }
 
 .timeline-area {
-  background: url("../../images/img-new/photoGallery/13.jpg") no-repeat top/cover;
+  background: url("/images/img-new/photoGallery/13.jpg") no-repeat top/cover;
 }
 
 .timeline-area {
