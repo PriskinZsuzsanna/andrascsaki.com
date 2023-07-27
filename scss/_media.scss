@@ -12,8 +12,14 @@
         }
     };
 
+    @if $breakpoint == landscape {
+        @media (min-width: 992px){
+            @content
+        }
+    };
+
     @if $breakpoint == laptop {
-        @media (min-width: 976px){
+        @media (min-width: 1232px){
             @content
         }
     };

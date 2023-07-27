@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
 
-    @include mediaq (laptop) {
+    @include mediaq (landscape) {
         background: url('../images/img-new/Home/Desktop/PH2_5398.jpg') no-repeat top center/cover;
     }
 
@@ -21,7 +21,7 @@
     gap: 2rem;
     padding-inline: 5%;
 
-    @include mediaq (laptop) {
+    @include mediaq (landscape) {
         align-items: flex-end;
     }
 

@@ -157,7 +157,7 @@
 .grid2-1 {
   display: grid;
 }
-@media (min-width: 976px) {
+@media (min-width: 1232px) {
   .grid2-1 {
     gap: 2rem;
     grid-template-columns: 3fr 1fr;
@@ -170,7 +170,7 @@
   }
 }
 
-@media (min-width: 976px) {
+@media (min-width: 1232px) {
   .grid2 {
     align-self: center;
   }
@@ -179,7 +179,7 @@
 .grid1 {
   display: none;
 }
-@media (min-width: 976px) {
+@media (min-width: 1232px) {
   .grid1 {
     display: block;
     align-self: center;
@@ -381,7 +381,7 @@ header.sticky a, header.sticky i {
   display: flex;
   align-items: center;
 }
-@media (min-width: 976px) {
+@media (min-width: 992px) {
   .hero {
     background: url("../images/img-new/Home/Desktop/PH2_5398.jpg") no-repeat top center/cover;
   }
@@ -400,7 +400,7 @@ header.sticky a, header.sticky i {
   gap: 2rem;
   padding-inline: 5%;
 }
-@media (min-width: 976px) {
+@media (min-width: 992px) {
   .social {
     align-items: flex-end;
   }
@@ -606,7 +606,7 @@ header.sticky a, header.sticky i {
   display: flex;
   justify-content: flex-end;
 }
-@media (min-width: 976px) {
+@media (min-width: 1232px) {
   .download {
     justify-content: flex-start;
   }
@@ -1085,7 +1085,7 @@ body.dark {
 section {
   padding-block: 4.5rem 2rem;
 }
-@media (min-width: 976px) {
+@media (min-width: 1232px) {
   section {
     padding-block: 5rem 4rem;
   }
