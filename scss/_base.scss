@@ -60,7 +60,7 @@ h4 {
 }
 
 p {
-    line-height: 1.4;
+    line-height: 1.5;
     text-align: justify;
 }
 
@@ -72,7 +72,15 @@ img {
 body {
     width: 100%;
     min-height: 100vh;
-    @include light ()
+    font-size: 1rem;
+    @include light ();
+
+    @include mediaq (laptop) {
+        font-size: 1.1rem;
+    }
+    @include mediaq (desktop) {
+        font-size: 1.2rem;
+    }
 }
 
 body.dark {

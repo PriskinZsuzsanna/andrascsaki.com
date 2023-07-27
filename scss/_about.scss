@@ -4,6 +4,14 @@
     img {
         border-radius: .6rem;
     }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    a {
+        color: var(--dark);
+    }
 }
 
 .tab-titles {
@@ -23,7 +31,7 @@
 
 .tab-titles> * {
     justify-self: center;
-    padding: .4rem;
+    padding: .5rem;
     width: 80px;
     text-align: center;
     border-radius: 2rem;
@@ -31,6 +39,9 @@
     
     @media ( width > 460px) {
         width: 130px;
+    }
+    @media ( width > 560px) {
+        width: 160px;
     }
     @media ( width > 660px) {
         width: 200px;

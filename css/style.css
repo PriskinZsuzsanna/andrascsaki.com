@@ -271,28 +271,6 @@ $d-color: #585a5a50;
 $d-dark: rgba(47, 66, 70, 0.736);
 $d-white: #70aab2;
 $d-transparent: #11191a56;*/
-.btn-secondary, .btn-primary {
-  display: inline-block;
-  border-radius: 5px;
-  padding: 8px 20px;
-  margin: 3px;
-  scale: 1;
-  transition: scale 0.3s linear;
-}
-.btn-secondary:hover, .btn-primary:hover {
-  scale: 0.98;
-}
-
-.btn-primary {
-  background-color: #418bff;
-  color: #333;
-}
-
-.btn-secondary {
-  background-color: #ff9f33;
-  color: #fff;
-}
-
 header {
   background: transparent;
   position: fixed;
@@ -552,6 +530,12 @@ header.sticky a, header.sticky i {
 .about img {
   border-radius: 0.6rem;
 }
+.about p {
+  margin-bottom: 1rem;
+}
+.about a {
+  color: var(--dark);
+}
 
 .tab-titles {
   width: min(100%, 800px);
@@ -571,7 +555,7 @@ header.sticky a, header.sticky i {
 
 .tab-titles > * {
   justify-self: center;
-  padding: 0.4rem;
+  padding: 0.5rem;
   width: 80px;
   text-align: center;
   border-radius: 2rem;
@@ -580,6 +564,11 @@ header.sticky a, header.sticky i {
 @media (width > 460px) {
   .tab-titles > * {
     width: 130px;
+  }
+}
+@media (width > 560px) {
+  .tab-titles > * {
+    width: 160px;
   }
 }
 @media (width > 660px) {
@@ -656,7 +645,7 @@ header.sticky a, header.sticky i {
 
 .tab-music-titles > * {
   justify-self: center;
-  padding: 0.4rem;
+  padding: 0.5rem;
   width: 80px;
   text-align: center;
   border-radius: 2rem;
@@ -665,6 +654,11 @@ header.sticky a, header.sticky i {
 @media (width > 460px) {
   .tab-music-titles > * {
     width: 130px;
+  }
+}
+@media (width > 560px) {
+  .tab-music-titles > * {
+    width: 160px;
   }
 }
 @media (width > 660px) {
@@ -1046,7 +1040,7 @@ h4 {
 }
 
 p {
-  line-height: 1.4;
+  line-height: 1.5;
   text-align: justify;
 }
 
@@ -1058,6 +1052,7 @@ img {
 body {
   width: 100%;
   min-height: 100vh;
+  font-size: 1rem;
   --sticky-nav: rgba(219, 216, 216, 0.7019607843);
   --light: rgba(3, 32, 39, 0.0509803922);
   --color: rgba(89, 88, 90, 0.3137254902);
@@ -1067,6 +1062,16 @@ body {
   --frosted: rgba(255, 255, 255, 0.2745098039);
   --frosted-hover: rgba(170, 170, 170, 0.7019607843);
   --transparent: rgba(26, 24, 17, 0.337254902);
+}
+@media (min-width: 1232px) {
+  body {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1670px) {
+  body {
+    font-size: 1.2rem;
+  }
 }
 
 body.dark {
