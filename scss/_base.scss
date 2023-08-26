@@ -67,15 +67,22 @@ p {
 img {
     max-width: 100%;
     display: block;
+    scale: 1;
+    transition: scale .3s ease-in-out;
+}
+
+img:hover {
+    scale: 1.02
 }
 
 body {
     width: 100%;
     min-height: 100vh;
     font-size: 1rem;
+    color: var(--dark);
     @include light ();
 
-    @include mediaq (laptop) {
+    @media (min-width: 1360px) {
         font-size: 1.1rem;
     }
     @include mediaq (desktop) {
@@ -84,7 +91,8 @@ body {
 }
 
 body.dark {
-    @include dark ()
+    @include dark ();
+    color: var(--dark)
 }
 
 section {

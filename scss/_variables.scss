@@ -7,21 +7,15 @@ $transparent: #1a181156;
 $filter: #908f8f7c;
 $frosted: #ffffff46;
 $frosted-hover: #aaaaaab3;
-/*
-$d-light: #1c8e9d;
-$d-color: #585a5a50;
-$d-dark: rgba(47, 66, 70, 0.736);
-$d-white: #70aab2;
-$d-transparent: #11191a56;*/
 
 $d-sticky-nav: #2c3739;
 $d-light: #2c3739;
-$d-color: #efefef;
-$d-dark: #efefef;
-$d-white: #6c7272;
+$d-color: #343a3fd3;
+$d-dark: #9a9ea0;
+$d-white: #253030;
 $d-filter: #3735357c;
-$d-frosted: #6c6c6cc8;
-$d-frosted-hover: #8d8b8bb3;
+$d-frosted: #292e36c8;
+$d-frosted-hover: #151c25ad;
 $d-transparent: #11191a56;
 
 @mixin light {

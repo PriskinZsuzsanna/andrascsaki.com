@@ -265,12 +265,6 @@
   margin-block: 5rem;
 }
 
-/*
-$d-light: #1c8e9d;
-$d-color: #585a5a50;
-$d-dark: rgba(47, 66, 70, 0.736);
-$d-white: #70aab2;
-$d-transparent: #11191a56;*/
 header {
   background: transparent;
   position: fixed;
@@ -691,36 +685,37 @@ header.sticky a, header.sticky i {
 }
 
 .timeline-area-cd {
-  background: url("../images/img/concerts/PH2_5488.jpg") no-repeat top/cover;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
+  /*background: url('../images/img/concerts/PH2_5488.jpg') no-repeat top/cover;
+  border-radius: .5rem;
+  padding: .5rem;
   position: relative;
-}
-.timeline-area-cd::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--filter);
-  border-radius: 0.5rem;
-  z-index: 1;
+  */
+  /*&::after {
+      @include pseudo;
+      background-color: var(--filter);
+      border-radius: .5rem;
+      z-index: 1;
+  }*/
 }
 .timeline-area-cd .cd-item {
-  width: min(100%, 266px);
-  padding: 0.5rem;
-  background: var(--frosted);
+  width: min(100%, 276px);
+  height: 440px;
+  padding: 1.2rem;
+  background: var(--color);
   margin: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 1px 1px 4px var(--frosted);
-  backdrop-filter: blur(3px);
+  box-shadow: 1px 1px 4px var(--white);
+  /*backdrop-filter: blur(3px);*/
   scale: 1;
   z-index: 2;
   transition: scale 0.3s ease-in-out, background 0.3s ease-in-out;
 }
 .timeline-area-cd .cd-item .cd-item-body {
+  padding-top: 1.4rem;
   text-align: center;
 }
 .timeline-area-cd .cd-item:hover {
-  scale: 1.03;
+  scale: 1.02;
   background-color: var(--frosted-hover);
   cursor: pointer;
 }
@@ -761,16 +756,10 @@ header.sticky a, header.sticky i {
 .timeline-area div:hover {
   scale: 1.03;
   background-color: var(--frosted-hover);
-  color: #000;
   cursor: pointer;
 }
 
-.timeline-area div h5 {
-  color: #000;
-}
-
 .timeline-area div p {
-  color: rgb(0, 0, 0);
   margin: 0;
   padding-left: 20px;
   z-index: 2;
@@ -807,6 +796,120 @@ header.sticky a, header.sticky i {
 .social-contact > *:hover i {
   translate: 0 -0.2rem;
   scale: 1.1;
+}
+
+/*-------Contact---------*/
+form {
+  padding-inline: 5%;
+}
+
+.contact .input-data {
+  position: relative;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  background: none;
+  resize: none;
+  color: var(--dark);
+}
+
+.contact textarea {
+  height: 130px;
+}
+
+.contact label,
+.contact ::placeholder,
+.contact button {
+  color: var(--dark);
+}
+
+.contact .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.contact button {
+  cursor: pointer;
+  width: 60%;
+  background: var(--dark);
+  border-radius: 35px;
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+  scale: 1;
+  transition: scale 0.3 ease-in-out;
+}
+
+.contact button:hover {
+  scale: 1.02;
+}
+
+.contact .input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  left: 0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact .textarea label {
+  width: 100%;
+  bottom: 20px;
+  color: var(--dark);
+}
+
+.contact .input-data input:focus ~ label,
+.contact .input-data input:valid ~ label,
+.contact .textarea textarea:valid ~ label {
+  transform: translateY(-30px);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.contact .textarea textarea:focus ~ label {
+  transform: translateY(-120px);
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.contact .input-data input:focus ~ .underline:before,
+.contact .input-data input:valid ~ .underline:before,
+.contact .textarea textarea:focus ~ .underline:before,
+.contact .textarea textarea:valid ~ .underline:before {
+  transform: scale(1);
+}
+
+.contact .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--dark);
+}
+
+.contact .input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--white);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+input:-internal-autofill-selected {
+  background: none;
 }
 
 .carousel-wrapper {
@@ -1047,12 +1150,19 @@ p {
 img {
   max-width: 100%;
   display: block;
+  scale: 1;
+  transition: scale 0.3s ease-in-out;
+}
+
+img:hover {
+  scale: 1.02;
 }
 
 body {
   width: 100%;
   min-height: 100vh;
   font-size: 1rem;
+  color: var(--dark);
   --sticky-nav: rgba(219, 216, 216, 0.7019607843);
   --light: rgba(3, 32, 39, 0.0509803922);
   --color: rgba(89, 88, 90, 0.3137254902);
@@ -1063,7 +1173,7 @@ body {
   --frosted-hover: rgba(170, 170, 170, 0.7019607843);
   --transparent: rgba(26, 24, 17, 0.337254902);
 }
-@media (min-width: 1232px) {
+@media (min-width: 1360px) {
   body {
     font-size: 1.1rem;
   }
@@ -1077,14 +1187,15 @@ body {
 body.dark {
   --sticky-nav: #2c3739;
   --light: #2c3739;
-  --color: #efefef;
-  --dark: #efefef;
-  --white: #6c7272;
+  --color: rgba(52, 58, 63, 0.8274509804);
+  --dark: #9a9ea0;
+  --white: #253030;
   --filter: rgba(55, 53, 53, 0.4862745098);
-  --frosted: rgba(108, 108, 108, 0.7843137255);
-  --frosted-hover: rgba(141, 139, 139, 0.7019607843);
+  --frosted: rgba(41, 46, 54, 0.7843137255);
+  --frosted-hover: rgba(21, 28, 37, 0.6784313725);
   --transparent: rgba(17, 25, 26, 0.337254902);
   color: #efefef;
+  color: var(--dark);
 }
 
 section {

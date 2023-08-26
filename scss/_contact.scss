@@ -33,6 +33,123 @@
 $size-width: 400px;
 $size-height: 250px;
 
+/*-------Contact---------*/
+
+form {
+  padding-inline: 5%;
+}
+
+.contact .input-data {
+  position: relative;
+}
+
+.contact input,
+.contact textarea,
+.contact button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 40px;
+  border: none;
+  outline: none;
+  background: none;
+  resize: none;
+  color: var(--dark);
+}
+
+.contact textarea {
+  height: 130px;
+}
+
+.contact label,
+.contact ::placeholder,
+.contact button {
+  color: var(--dark);
+}
+
+.contact .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.contact button {
+  cursor: pointer;
+  width: 60%;
+  background: var(--dark);
+  border-radius: 35px;
+  color: var(--white);
+  transition: all .3s ease-in-out;
+  scale: 1;
+  transition: scale .3 ease-in-out;
+}
+
+.contact button:hover {
+  scale: 1.02;
+}
+
+.contact .input-data label {
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  left: 0;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.contact .textarea label {
+  width: 100%;
+  bottom: 20px;
+  color: var(--dark)
+}
+
+
+.contact .input-data input:focus~label,
+.contact .input-data input:valid~label,
+.contact .textarea textarea:valid~label {
+  transform: translateY(-30px);
+  font-size: 14px;
+  opacity: .8;
+}
+
+.contact .textarea textarea:focus~label {
+  transform: translateY(-120px);
+  font-size: 14px;
+  opacity: .8;
+}
+
+.contact .input-data input:focus~.underline:before,
+.contact .input-data input:valid~.underline:before,
+.contact .textarea textarea:focus~.underline:before,
+.contact .textarea textarea:valid~.underline:before {
+  transform: scale(1);
+}
+
+.contact .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--dark);
+}
+
+.contact .input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--white);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+input:-internal-autofill-selected {
+  background: none;
+}
+
+
 .carousel-wrapper {
   width: 100%;
   height: min(70vw, 300px);
