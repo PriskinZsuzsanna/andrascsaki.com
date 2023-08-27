@@ -5,13 +5,13 @@
 @import './concerts.scss';
 @import './contact.scss';
 @import './footer.scss';
+@import './thanks.scss';
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-
 }
 
 html {
@@ -20,7 +20,7 @@ html {
 
 a {
     text-decoration: none;
-    color: $white;
+    color: var(--hero);
 }
 
 ul {
@@ -29,13 +29,15 @@ ul {
 
 .fa-brands{
     font-size: 1.7rem;
-    color: $white;
+    color: var(--hero);
+    cursor: pointer;
 }
 
 .fa-solid {
     font-size: 1.4rem;
-    color: $white;
+    color: var(--hero);
     margin-top: .2rem;
+    cursor: pointer;
 }
 
 iframe {

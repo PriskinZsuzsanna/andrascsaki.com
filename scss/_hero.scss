@@ -3,6 +3,7 @@
     background: url('../images/img-new/Home/Mobile/PH2_5385.jpg') no-repeat center/cover;
     display: flex;
     align-items: center;
+    position: relative;
 
     @include mediaq (landscape) {
         background: url('../images/img-new/Home/Desktop/PH2_5398.jpg') no-repeat top center/cover;
@@ -13,13 +14,23 @@
     }
 }
 
+body.dark .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #2627316e;
+    z-index: 10;
+}
+
 .social {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 2rem;
     padding-inline: 5%;
+    z-index: 12;
 
     @include mediaq (landscape) {
         align-items: flex-end;

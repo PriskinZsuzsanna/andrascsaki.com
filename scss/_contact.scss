@@ -37,6 +37,8 @@ $size-height: 250px;
 
 form {
   padding-inline: 5%;
+  margin-inline: auto;
+  width: min(100%, 700px);
 }
 
 .contact .input-data {
