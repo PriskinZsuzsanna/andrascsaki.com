@@ -3,7 +3,21 @@
 .thanks-section {
     width: 100%;
     min-height: 100vh;
-    background: var(--frosted-hover);
+    background: url('../images/img/background/PH2_5487.jpg') no-repeat center/cover;
+    position: relative;
+    z-index: 1;
+
+    @include mediaq (desktop) {
+        background: url('../images/img/background/PH2_5485.jpg') no-repeat center/cover;
+    }
+}
+
+.thanks-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(110deg, #bcb6b69e , #9aa6d286);
+    z-index: -1;
 }
 
 .thanks-container {
