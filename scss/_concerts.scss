@@ -31,13 +31,22 @@
 .timeline-area div:hover{
     scale: 1.03;
     background-color:  var(--frosted-hover);
-    cursor:pointer;
 }
 
 
 .timeline-area div p {
     margin: 0;
     padding-left: 20px;
+    z-index: 2;
+}
+.timeline-area div a {
+    margin-top: .5rem;
+    margin-left: -.5rem;
+    padding: .4rem 1.4rem;
+    background-color: black;
+    display: inline-block;
+    border-radius: 1.8rem;
+    font-size: .8rem;
     z-index: 2;
 }
 
