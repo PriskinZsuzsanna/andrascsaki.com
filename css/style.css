@@ -209,7 +209,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 0.8rem;
+  gap: 1rem;
 }
 
 .flex-flow {
@@ -773,7 +773,8 @@ body.dark .hero::after {
   background-color: var(--frosted-hover);
 }
 
-.timeline-area div p {
+.timeline-area div p,
+i {
   margin: 0;
   padding-left: 20px;
   z-index: 2;
@@ -787,6 +788,8 @@ body.dark .hero::after {
   display: inline-block;
   border-radius: 1.8rem;
   font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   z-index: 2;
 }
 
@@ -1302,7 +1305,7 @@ body {
   --dark: #032027;
   --white: #fff;
   --filter: rgba(144, 143, 143, 0.4862745098);
-  --frosted: rgba(255, 255, 255, 0.2745098039);
+  --frosted: rgba(255, 255, 255, 0.4509803922);
   --frosted-hover: rgba(170, 170, 170, 0.7019607843);
   --transparent: rgba(26, 24, 17, 0.337254902);
   --hero: #fff;
