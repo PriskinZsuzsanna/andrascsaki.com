@@ -272,8 +272,8 @@ header {
   z-index: 900;
   backdrop-filter: blur(20px);
 }
-header .logo a {
-  font-size: 1.3rem;
+header .logo h1 {
+  font-size: 1.5rem;
 }
 header nav {
   width: min(100%, 1600px);
@@ -780,17 +780,31 @@ i {
   z-index: 2;
 }
 
-.timeline-area div a {
+.timeline-area a {
+  color: unset;
+}
+
+.timeline-area .link a {
   margin-top: 0.5rem;
   margin-left: -0.5rem;
   padding: 0.4rem 1.4rem;
   background-color: black;
+  color: white;
   display: inline-block;
   border-radius: 1.8rem;
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   z-index: 2;
+}
+
+ul.program {
+  margin-block: 1rem;
+  margin-left: 3rem;
+  list-style: disc;
+}
+ul.program li {
+  padding-bottom: 0.4rem;
 }
 
 .img-div img {
