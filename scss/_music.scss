@@ -67,9 +67,17 @@
     border: 1px solid var(--dark);
 }
 
-.tab-music-contents > .flex-auto {
+.tab-music-contents>.flex-auto {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+
+    @include mediaq (laptop) {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+
+    @include mediaq (desktop) {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
 }
 
 .tab-music-contents:not(.active-tab) {
