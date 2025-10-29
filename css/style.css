@@ -685,6 +685,11 @@ body.dark .hero::after {
   border: 1px solid var(--dark);
 }
 
+.tab-music-contents > .flex-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
 .tab-music-contents:not(.active-tab) {
   display: none;
 }
@@ -714,7 +719,7 @@ body.dark .hero::after {
 }
 .timeline-area-cd .cd-item {
   width: min(100%, 276px);
-  height: 460px;
+  height: 500px;
   padding: 1rem;
   background: var(--color);
   margin: 1rem;
@@ -769,8 +774,7 @@ body.dark .hero::after {
 }
 
 .timeline-area div:hover {
-  scale: 1.03;
-  background-color: var(--frosted-hover);
+  scale: 1.01;
 }
 
 .timeline-area div p,
@@ -1336,8 +1340,8 @@ body {
 }
 
 body.dark {
-  --sticky-nav: #2c3739;
-  --light: #2c3739;
+  --sticky-nav: #222;
+  --light: #014355;
   --color: rgba(52, 58, 63, 0.8274509804);
   --dark: #9a9ea0;
   --white: #253030;
